@@ -1,0 +1,3 @@
+execute as @e[type=arrow,nbt={Color:13228799,inGround:true}] at @e[type=arrow,nbt={Color:13228799,inGround:true}] unless entity @e[type=cow,distance=0..1] run summon cow ~ ~ ~ {Health:0.0001f,NoAI:true,Tags:["LightningCow"],Silent:true,ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}],DeathLootTable:"minecraft:empty"}
+execute at @e[type=cow,nbt={Tags:["LightningCow"]}] run kill @e[type=arrow,nbt={Color:13228799,inGround:true}]
+execute at @e[type=cow,nbt={Tags:["LightningCow"]}] as @e[type=cow,nbt={Tags:["LightningCow"]}] run summon minecraft:lightning_bolt ~ ~ ~

@@ -1,0 +1,2 @@
+execute as @e[type=creeper] at @e[type=creeper] if entity @e[type=arrow,distance=0..1] run kill @e[type=arrow,distance=0..1]
+execute at @e[type=arrow,nbt={inGround:true,Potion:"minecraft:poison"}] as @e[type=arrow,nbt={inGround:true,Potion:"minecraft:poison"}] unless entity @e[type=creeper,distance=0..1] run summon minecraft:creeper ~ ~ ~ {Health:0.01f,NoAI:true,Silent:true,ActiveEffects:[{Id:19,Amplifier:0,Duration:240}],DeathLootTable:"minecraft:empty",ignited:true,Fuse:2,ExplosionRadius:0}
