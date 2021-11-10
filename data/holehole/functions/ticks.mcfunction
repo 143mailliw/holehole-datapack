@@ -2,8 +2,8 @@
 execute at @e[type=arrow,nbt={inGround:true,Color:16580398}] as @e[type=arrow,nbt={Color:16580398}] run function holehole:c418-blocks/arrow
 
 # TNT Defusing
-execute as @e[type=tnt] at @e[type=tnt] unless entity @e[type=sheep,distance=0..1] run summon sheep ~ ~ ~ {Health:0.01f,NoAI:1b,Tags:["DefuseSheep"],Silent:1b,ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}],DeathLootTable:"minecraft:empty"}
-execute as @e[type=sheep,nbt={Sheared:1b,Tags:["DefuseSheep"]}] at @e[type=sheep,nbt={Sheared:1b,Tags:["DefuseSheep"]}] run function holehole:tnt-defusing/tnt-shearing
+#execute as @e[type=tnt] at @e[type=tnt] unless entity @e[type=sheep,distance=0..1] run summon sheep ~ ~ ~ {Health:0.01f,NoAI:1b,Tags:["DefuseSheep"],Silent:1b,ActiveEffects:[{Id:14,Amplifier:0,Duration:20000000,ShowParticles:0b}],DeathLootTable:"minecraft:empty"}
+#execute as @e[type=sheep,nbt={Sheared:1b,Tags:["DefuseSheep"]}] at @e[type=sheep,nbt={Sheared:1b,Tags:["DefuseSheep"]}] run function holehole:tnt-defusing/tnt-shearing
 
 # Stupid Jack-o'-lantern thing
 execute if block -14 68 1425 minecraft:dark_oak_button[powered=true] run setblock -13 69 1425 minecraft:jack_o_lantern[facing=west]
